@@ -54,7 +54,7 @@ export default function StaffView() {
     const channel = pusherClient.subscribe(CHANNEL_NAME);
 
     channel.bind(EVENT_FIELD_UPDATE, (data) => {
-      // Handles both single-field updates and the final full snapshot on submit
+      // Handles both single-field updates 
       if (data.fieldName) {
         setValues((prev) => ({ ...prev, [data.fieldName]: data.value }));
         setActiveField(data.fieldName);

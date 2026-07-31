@@ -25,7 +25,7 @@ export default function FormField({
     "peer-focus:top-1 peer-focus:text-xs " +
     (error ? "text-red-500 peer-focus:text-red-500" : "text-gray-500 peer-focus:text-blue-500");
 
-  // --- Radio group (e.g. Gender) ---
+  // --- Radio group  ---
   if (type === "radio") {
     return (
       <div className="w-full">
@@ -98,7 +98,7 @@ export default function FormField({
   onChange={(e) => onChange(name, e.target.value)}
   onAnimationStart={(e) => {
     if (e.animationName === "onAutoFillStart") {
-      onChange(name, e.target.value); // autofill ဖြစ်တဲ့အခါ value ကို force sync
+      onChange(name, e.target.value); 
     }
   }}
   onBlur={() => onBlur && onBlur(name)}

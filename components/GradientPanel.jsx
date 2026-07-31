@@ -10,7 +10,7 @@ export default function GradientPanel() {
         <p className="mt-4 text-lg lg:text-xl font-medium">Healthcare service . . .</p>
       </div>
 
-      {/* Marquee row — "Anytime" and "Anywhere" scroll horizontally in a loop */}
+    
       <div className="relative w-full overflow-hidden whitespace-nowrap">
         <div className="inline-flex animate-marquee gap-16 text-white/80 text-sm font-medium">
           {Array(4)

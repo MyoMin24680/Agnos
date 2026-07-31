@@ -13,7 +13,7 @@ export default function GradientPanel() {
     
       <div className="relative w-full overflow-hidden whitespace-nowrap">
         <div className="inline-flex animate-marquee gap-16 text-white/80 text-sm font-medium">
-          {Array(4)
+          {Array(1)
             .fill(0)
             .map((_, i) => (
               <span key={i} className="inline-flex gap-16">
